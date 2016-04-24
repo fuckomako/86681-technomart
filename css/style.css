@@ -1,13 +1,213 @@
 body{
-    font-size: 14px;
-    line-height: 0.024em;
-    color: #000000;
-    font-weight: normal;
-    font-family: 'Cuprum', arial;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
-h1{
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+p,
+ul,
+h3,
+h2,
+h1,
+input,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*Основные Стили Сайта*/
+.header-top{
+    margin-bottom: 50px;
+}
+.header-logo{
+    float: left;
+    width: 220px;
     
 }
-h2{
+.header-search{
+    float: left;
+    width: 100px;
+}
+.header-bookmark{
+    width: 100px;
+    text-decoration: none;
+    margin-left: 180px;
+}
+.header-basket{
+    width: 100px;
+    text-decoration: none;
+}
+.header-order{
+    width: 150px;
+    text-decoration: none;
+}
+.header-middle{
+    margin-bottom: 50px;
+}
+.header-middle-about{
+    width: 200px;
+    float: left
+}
+.header-middle-contacts{
+    width: 270px;
+    float: left;
+}
+.header-middle-userblock{
+    width: 280px;
+    float: right;
+}
+.main-menu{
+  
+}
+.main-menu ul li{
+    display: inline-block;
+}
+/*Блок Предложений*/
+.main-header{
+    margin-bottom: 59px;
+}
+.offer-item{
+    display: inline-block;
+}
+.offer-item:nth-child(3n){
+    margin-right: 0;
+}
+.offer-materials{
     
+}
+.offer-tools{
+   
+}
+.offer-technics{
+   
+}
+.slider{
+    width: 620px;
+    height: 266px;
+    border: 1px solid yellow;
+    background: url(../img/offer-slider-perforator.jpg) no-repeat;
+}
+.offer-discount{
+    
+}
+.offer-delivery{
+   
+}
+
+.popular-title{
+    float: left;
+}
+.popular-btn{
+    float: right;
+}
+.catalog-item{
+    float: left;
+    margin-right: 20px;
+}
+.popular-title{
+   float: left;
+}
+.popular-btn{
+    float: right;
+}
+.brands-logo{
+    
+}
+.service-list{
+    float: left;
+}
+.service-delivery{
+    float: right;
+}
+.left-column{
+    float: left;
+    width: 520px;
+}
+.right-column{
+  float: right;
+}
+
+/*Футер*/
+.footer-top{
+    margin-bottom: 30px;
+}
+.footer-logo{
+    float:left;
+    width: 220px;
+}
+.footer-contacts{
+    float:left;
+    width: 550px;
+}
+.footer-contacts li{
+    list-style-type: none;
+    display: inline-block;
+}
+.footer-middle{
+    margin-bottom: 54px;
+}
+.footer-address{
+    float: left;
+    width: 325px;
+}
+.footer-offer{
+    float: left;
+    width: 530px;
+    margin-right: 75px;
+}
+.footer-offer li{
+   list-style-type: none;
+   display: inline-block; 
+}
+.footer-bottom-copyright{
+    float: left;
+    width: 234px;
+}
+.footer-bottom-social{
+    float: left;
+    width: 130px;
+}
+.footer-bottom-feedback{
+    float: left;
+    width: 135px;
+    margin-right: 100px;
+}
+.footer-bottom-design{
+    float: left;
+    width: 110px;
+}
+
+/*Вертска catalog.html*/
+.breadcrumbs li{
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.catalog-page{
+    float: left;
+    width: 220px;
+}
+.catalog-options-parameters{
+    display: inline-block;
+}
+.catalog-goods{
+    border: 1px solid green;
+    width: 700px;
+    float: right;
+}
+.paginator{
+    
+}
+.catalog-description{
+    float: right;
 }
