@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Главная Страница: Техномарт</title>
-     <link href="http://allfont.ru/allfont.css?fonts=cuprum" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-        <div class="container">
-            <div class="header-top clearfix">
+       <div class="header-top clearfix">
+            <div class="container">
                 <a class="header-logo" href="#">Техномарт</a>
                 <form class="header-search" action="#" method="post">
                     <input type="search" name="search" id="search" placeholder="Поиск:" required>
@@ -45,9 +46,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="offer-block">
-           <div class="container">
+    <main class="container">
+        <div class="offer">
              <div class="offer-item offer-materials">
                 <p class="offer-item-title">Материал</p>
                 <a class="offer-item-link" href="#">На любой вкус</a>
@@ -60,6 +60,8 @@
                 <p class="offer-item-title">Техника</p>
                 <a class="offer-item-link" href="#">Для стройки</a>
             </div>
+
+        </div>
             <!--Слайдер-->
             <div class="slider clearfix">
                     <div class="slider-item slider-drills">
@@ -73,8 +75,7 @@
                     <div class="slider-arrow-left"></div>
                     <div class="slider-arrow-right"></div>
                 </div>
-            </div>
-            
+                  <div class="offer-block">
             <div class="offer-item offer-discount">
                 <p class="offer-item-title">Скидка 50%</p>
                 <a class="offer-item-link" href="#">На 350 товаров</a>
@@ -84,11 +85,14 @@
                 <a class="offer-item-link" href="#">Бесплатно</a>
              </div>
             </div>
-           </div>
-            <div class="container clearfix">
-                <p class="popular-title">Популярные товары:</p>
-                <a class="popular-btn" href="#">Все популярные товары</a>
             </div>
+            
+             <div class="container">
+               <div class="popular clearfix">
+                   <p class="popular-title">Популярные производители:</p>
+                   <a class="popular-btn" href="#">Все производители</a>
+              </div>
+          </div>
         <div class="popular-item clearfix">
            <div class="container">
             <div class="catalog-item">
@@ -120,12 +124,12 @@
                 </div>
             </div>
         </div>
-         <div class="popular clearfix">
-            <div class="container">
-                <p class="popular-title">Популярные производители:</p>
-                <a class="popular-btn" href="#">Все производители</a>
-            </div>
-        </div>
+           <div class="container">
+               <div class="popular clearfix">
+                   <p class="popular-title">Популярные производители:</p>
+                   <a class="popular-btn" href="#">Все производители</a>
+              </div>
+          </div>
             <div class="container">
                 <a class="brands-logo" href="img/brands-logo-1.jpg">
                     <img src="img/brands-logo-1.jpg" alt="Bosch" width="218" height="143">
@@ -152,17 +156,18 @@
                     <img src="img/brands-logo-8.jpg" alt="Metabo" width="218" height="143">
                 </a>
             </div>
-        <div class="service clearfix">
+        <section class="service">
             <div class="container">
-                <div class="service-info">
-                    <div class="service-info-title">Сервисы</div>
-                    <p class="service-info-about">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-                    <p class="service-info-about">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                <div class="service-intro">
+                    <h2 class="service-title">Сервисы</h2>
+                    <p class="service-title-info">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+                    <p class="service-title-info">Мы стараемся изо всех сил чтобы сделать ваши покупки приятными.</p>
                 </div>
-                <div class="service-list">
-                      <ul>
+                <div class="service-columns clearfix">
+                    <div class="left-column service-list-column">
+                        <ul>
                             <li>
-                                <a href="#" class="list-active">Доставка</a>
+                                <a href="#" class="service-list-active">Доставка</a>
                             </li>
                             <li>
                                 <a href="#">Гарантия</a>
@@ -171,17 +176,31 @@
                                 <a href="#">Кредит</a>
                             </li>
                         </ul>
-                </div>
-                <div class="service-delivery">
-                    <h2 class="service-delivery-title">Доставка</h2>
-                    <p class="service-delivery-info">Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
-                    <p class="service-delivery-info">Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
+                    </div>
+                    <div class="right-column service-details-column">
+                        <section class="service-details-block service-details-delivery service-details-active">
+                            <h2 class="service-details-title">Доставка</h2>
+                            <p class="service-details-info service-delivery-info">Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
+                            <p class="service-details-info service-delivery-info">Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
+                        </section>
+                        <section class="service-details-block service-details-warrianty">
+                            <h2 class="service-details-title">Гарантия</h2>
+                            <p class="service-details-info service-warrianty-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                            <p class="service-details-info service-warrianty-info">Дом уж восстановите как-нибудь сами.</p>
+                        </section>
+                        <section class="service-details-block service-details-credit">
+                            <h2 class="service-details-title">Кредит</h2>
+                            <p class="service-details-info service-credit-info">Залезть в долговую яму стало проще!</p>
+                            <p class="service-details-info service-credit-info">Кредитные консультанты придут вам на помощь.</p>
+                            <a href="#" class="service-btn">Отправить заявку</a>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="company clearfix">
             <div class="container">
-                <div class="company-about left-column">
+                <div class="left-column company-about">
                     <h2 class="company-about-title">КОМПАНИЯ «Техномарт»</h2>
                     <p class="company-about-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
                     <p class="company-about-info">Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -193,7 +212,7 @@
                     </ul>
                     <a class="company-about-btn" href="#">Подробнее о компании</a>
                 </div>
-                <div class="company-contacts right-column">
+                <div class="right-column company-contacts">
                     <h2 class="company-contacts-title">КОНТАКТЫ</h2>
                     <p class="company-contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
                     <div class="company-contacts-map">
