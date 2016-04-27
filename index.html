@@ -9,17 +9,21 @@
   </head>
   <body>
     <header class="main-header">
-       <div class="header-top">
+       <div class="header-top clearfix">
             <div class="container">
                 <a class="header-logo" href="#">Техномарт</a>
                 <form class="header-search" action="#" method="post">
                     <input type="search" name="search" id="search" placeholder="Поиск:" required>
                     <label for="search"></label>
                 </form>
+                <div class="header-top-wrapper">
                 <a class="header-bookmark" href="#">Закладки</a>
                 <a class="header-basket" href="#">Корзина</a>
                 <a class="header-order" href="#">Оформить Заказ</a>
+                </div>
             </div>
+        </div>    
+        <div class="container"> 
             <div class="header-middle clearfix">
                 <p class="header-middle-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 <div class="header-middle-contacts">
@@ -44,10 +48,11 @@
                       </ul>        
                 </nav>
             </div>
-        </div>
+        </div>      
     </header>
-    <main class="container">
-        <div class="offer">
+    <main>
+       <div class="container">
+        <div class="offer clearfix">
              <div class="offer-item offer-materials">
                 <p class="offer-item-title">Материал</p>
                 <a class="offer-item-link" href="#">На любой вкус</a>
@@ -60,10 +65,10 @@
                 <p class="offer-item-title">Техника</p>
                 <a class="offer-item-link" href="#">Для стройки</a>
             </div>
-
         </div>
-            <!--Слайдер-->
-            <div class="slider clearfix">
+         
+        <div class="slider-wrapper clearfix">    
+            <div class="slider">
                     <div class="slider-item slider-drills">
                         <div class="slider-header">
                             <p class="slider-title">Перфораторы</p>
@@ -75,7 +80,9 @@
                     <div class="slider-arrow-left"></div>
                     <div class="slider-arrow-right"></div>
                 </div>
-                  <div class="offer-block">
+            </div>
+            
+               <div class="offer-block">
             <div class="offer-item offer-discount">
                 <p class="offer-item-title">Скидка 50%</p>
                 <a class="offer-item-link" href="#">На 350 товаров</a>
@@ -85,10 +92,10 @@
                 <a class="offer-item-link" href="#">Бесплатно</a>
              </div>
             </div>
-            </div>
-            
+        </div>    
+       </div>   
              <div class="container">
-               <div class="popular clearfix">
+               <div class="popular-block clearfix">
                    <p class="popular-title">Популярные производители:</p>
                    <a class="popular-btn" href="#">Все производители</a>
               </div>
@@ -125,39 +132,43 @@
             </div>
         </div>
            <div class="container">
-               <div class="popular clearfix">
+               <div class="popular-block clearfix">
                    <p class="popular-title">Популярные производители:</p>
                    <a class="popular-btn" href="#">Все производители</a>
               </div>
           </div>
             <div class="container">
-                <a class="brands-logo" href="img/brands-logo-1.jpg">
+               <div class="brands">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-1.jpg" alt="Bosch" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-2.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-2.jpg" alt="Makita" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-3.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-3.jpg" alt="DeWalt" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-4.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-4.jpg" alt="Интерскол" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-5.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-5.jpg" alt="Hitachi" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-6.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-6.jpg" alt="LG" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-7.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-7.jpg" alt="AEG" width="218" height="143">
                 </a>
-                <a class="brands-logo" href="img/brands-logo-8.jpg">
+                <a class="brands-logo" href="#">
                     <img src="img/brands-logo-8.jpg" alt="Metabo" width="218" height="143">
                 </a>
+                </div>    
             </div>
-        <section class="service">
-            <div class="container">
+        
+                       
+            <section class="service">
+               <div class="container">
                 <div class="service-intro">
                     <h2 class="service-title">Сервисы</h2>
                     <p class="service-title-info">Хороший интернет-магазин отличается от плохого не только ценами!</p>
@@ -183,6 +194,7 @@
                             <p class="service-details-info service-delivery-info">Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
                             <p class="service-details-info service-delivery-info">Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
                         </section>
+                        <!--
                         <section class="service-details-block service-details-warrianty">
                             <h2 class="service-details-title">Гарантия</h2>
                             <p class="service-details-info service-warrianty-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
@@ -194,10 +206,12 @@
                             <p class="service-details-info service-credit-info">Кредитные консультанты придут вам на помощь.</p>
                             <a href="#" class="service-btn">Отправить заявку</a>
                         </section>
+                        -->
                     </div>
                 </div>
-            </div>
-        </section>
+             </div>      
+        </section>     
+        
         <div class="company clearfix">
             <div class="container">
                 <div class="left-column company-about">
@@ -216,7 +230,7 @@
                     <h2 class="company-contacts-title">КОНТАКТЫ</h2>
                     <p class="company-contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
                     <div class="company-contacts-map">
-                        
+                       <img src="img/company-contacts-map.jpg" width="300" height="160" alt="Мы на карте"> 
                     </div>
                     <a href="#" class="company-feedback-btn">Заблудились? Напишите нам!</a>
                 </div>
@@ -224,7 +238,7 @@
         </div>
     </main>
     <footer>
-        <div class="container clearfix">
+        <div class="container">
             <div class="footer-top clearfix">
                 <a href="index.html" class="footer-logo">Техномарт</a>
                  <ul class="footer-contacts">
