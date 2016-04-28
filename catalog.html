@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="header-top">
-                <a class="header-logo" href="index.html">Техномарт</a>
-                    <input type="search" name="search" id="search" placeholder="Поиск:">
-                <a class="header-bookmark" href="#">Закладки:0</a>
-                <a class="header-basket" href="#">Корзина:10</a>
+     <header class="main-header">
+       <div class="header-top clearfix">
+            <div class="container">
+                <a class="header-logo" href="#">Техномарт</a>
+                <form class="header-search" action="#" method="post">
+                    <input type="search" name="search" id="search" placeholder="Поиск:" required>
+                    <label for="search"></label>
+                </form>
+                <div class="header-top-wrapper">
+                <a class="header-bookmark" href="#">Закладки</a>
+                <a class="header-basket" href="#">Корзина</a>
                 <a class="header-order" href="#">Оформить Заказ</a>
+                </div>
             </div>
+        </div>    
+        <div class="container"> 
             <div class="header-middle clearfix">
                 <p class="header-middle-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 <div class="header-middle-contacts">
@@ -22,11 +29,8 @@
                     <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div class="header-middle-userblock">
-                     <a href="#" class="header-block-userblock">Равшан Джамшутович</a>
-                    <div class="header-block-links">
-                        <a href="#" class="header-links-element">Мои заказы</a>
-                        <a href="#" class="header-links-element">Мой кабинет</a>
-                    </div>
+                    <a class="header-middle-login" href="#">Вход</a>
+                    <a class="header-middle-registration" href="#">Регистрация</a>
                 </div>
             </div>
              <div class="header-bottom">
@@ -42,7 +46,7 @@
                       </ul>        
                 </nav>
             </div>
-        </div>
+        </div>      
     </header>
     
     <div class="container clearfix">
@@ -59,9 +63,7 @@
         </ul>
         <h1 class="catalog-title">Перфораторы</h1>
         <div class="wrapper-left">
-            <div class="catalog-page">
-                <div class="catalog-filter">
-                        <form action="#" method="post">
+            <form action="#" method="post">
                     <p>Фильтр:</p>
                     <h3 class="catalog-filter-title">Цена:</h3>
                     <div class="catalog-range-filter">
@@ -96,8 +98,6 @@
                     <label for="unchargeable">Сетевые</label>
                     <button type="submit" class="filter-btn">Показать</button>
                 </form>
-                </div>
-            </div>
         </div>
         <div class="wrapper-right clearfix">
             <div class="catalog-goods">
@@ -111,8 +111,8 @@
                         <a class="catalog-down-arrow" href="#"></a>
                     </div>
                 </div>
-                <div class="wrapper-right clearfix">
-                  <div class="catalog-block">
+        
+                  <div class="catalog-block clearfix">
                     <div class="catalog-item">
                             <img src="img/catalog-item-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="200" height="170">
                         <div class="catalog-item-buttons">
@@ -209,7 +209,8 @@
                         <p class="catalog-item-model">BFG 2000</p>
                         <p class="catalog-item-discount">12 500 Р.</p>
                     </div>
-                     <div class="paginator">
+                    
+                     <div class="paginator clearfix">
                    <ul>
                        <li><span class="paginator-active">1</span></li>
                        <li><a href="#">2</a></li>
@@ -217,18 +218,18 @@
                        <li><a class="paginator-next" href="#">Следующая</a></li>
                      </ul>
                 </div>
+                   
                     </div>
-                </div>
             </div>
       </div>    
         </div>
-            <div class="catalog-description clearfix">
+            <div class="catalog-description">
                 <h2 class="catalog-description-title container">Пара слов о перфораторах</h2>
                     <p class="catalog-description-about container">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
-    <footer>
+     <footer>
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-top clearfix">
                 <a href="index.html" class="footer-logo">Техномарт</a>
                  <ul class="footer-contacts">
                 <li>
@@ -248,12 +249,12 @@
                 </li>
             </ul>
             </div>
-            <div class="footer-middle">
+            <div class="footer-middle clearfix">
                  <div class="footer-address">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>+7 (495) 555-05-55</p>
             </div>
-             <ul class="footer-offer">
+             <ul class="footer-offer clearfix">
                 <li>
                     <a href="#">Материалы</a>
                 </li>
@@ -268,22 +269,22 @@
                 </li>
             </ul>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom clearfix">
                 <div class="footer-bottom-copyright">
                     <p>© 2010-2013 Компания «Техномарт»</p>
                     <p>Все права защищены</p>
                 </div>
                 <div class="footer-bottom-social">
-                    <a href="#" class="footer-social-btn footer-social-vk"></a>
-                    <a href="#" class="footer-social-btn footer-social-fb"></a>
-                    <a href="#" class="footer-social-btn footer-social-inst"></a>
+                    <a href="#" class="footer-social-btn footer-social-vk">VK</a>
+                    <a href="#" class="footer-social-btn footer-social-fb">FB</a>
+                    <a href="#" class="footer-social-btn footer-social-inst">INST</a>
                 </div>
                  <div class="footer-bottom-feedback">
                     <p>Обратная связь:</p>
                     <a href="mailto:info@technomart.ru" class="footer-feedback-mail">info@technomart.ru</a>
                 </div>
                 <div class="footer-bottom-design">
-                    <p>Дизайн сайта -</p>
+                    <p>Разработано  -</p>
                     <a href="#" class="footer-design-author">glukhanko.ru</a>
                 </div>
             </div>
