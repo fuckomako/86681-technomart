@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Страница Каталога: Техномарт</title>
+    <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normallize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-     <header class="main-header">
+   <header class="main-header">
        <div class="header-top clearfix">
             <div class="container">
-                <a class="header-logo" href="#">Техномарт</a>
+                <a class="header-logo" href="index.html">Техномарт</a>
                 <form class="header-search" action="#" method="post">
                     <input type="search" name="search" id="search" placeholder="Поиск:" required>
                     <label for="search"></label>
                 </form>
-                <div class="header-top-wrapper">
-                <a class="header-bookmark" href="#">Закладки</a>
-                <a class="header-basket" href="#">Корзина</a>
+                <a class="header-bookmark" href="#">Закладки: 0</a>
+                <a class="header-cart" href="#">Корзина: 0</a>
                 <a class="header-order" href="#">Оформить Заказ</a>
-                </div>
             </div>
         </div>    
         <div class="container"> 
@@ -28,9 +29,9 @@
                     <p class="header-contacts-telephone">+7 (812) 555-05-55</p>
                     <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-                <div class="header-middle-userblock">
-                    <a class="header-middle-login" href="#">Вход</a>
-                    <a class="header-middle-registration" href="#">Регистрация</a>
+                <div class="header-middle-user">
+                    <a href="#" class="header-user-login">Войти</a>
+                    <a href="#" class="header-user-registration">Регистрация</a>
                 </div>
             </div>
              <div class="header-bottom">
@@ -227,9 +228,9 @@
                 <h2 class="catalog-description-title container">Пара слов о перфораторах</h2>
                     <p class="catalog-description-about container">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
-     <footer>
-        <div class="container">
+    <footer>
             <div class="footer-top clearfix">
+               <div class="container">
                 <a href="index.html" class="footer-logo">Техномарт</a>
                  <ul class="footer-contacts">
                 <li>
@@ -248,8 +249,10 @@
                     <a href="#">Контакты</a>
                 </li>
             </ul>
+        </div>    
             </div>
             <div class="footer-middle clearfix">
+            <div class="container">    
                  <div class="footer-address">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>+7 (495) 555-05-55</p>
@@ -268,27 +271,29 @@
                     <a href="#">Спецпредложения</a>
                 </li>
             </ul>
+        </div>    
             </div>
             <div class="footer-bottom clearfix">
+               <div class="container">
                 <div class="footer-bottom-copyright">
                     <p>© 2010-2013 Компания «Техномарт»</p>
                     <p>Все права защищены</p>
                 </div>
                 <div class="footer-bottom-social">
-                    <a href="#" class="footer-social-btn footer-social-vk">VK</a>
-                    <a href="#" class="footer-social-btn footer-social-fb">FB</a>
-                    <a href="#" class="footer-social-btn footer-social-inst">INST</a>
+                    <a href="#" class="footer-social-btn footer-social-vk"></a>
+                    <a href="#" class="footer-social-btn footer-social-fb"></a>
+                    <a href="#" class="footer-social-btn footer-social-inst"></a>
                 </div>
                  <div class="footer-bottom-feedback">
                     <p>Обратная связь:</p>
                     <a href="mailto:info@technomart.ru" class="footer-feedback-mail">info@technomart.ru</a>
                 </div>
                 <div class="footer-bottom-design">
-                    <p>Разработано  -</p>
+                    <p>Дизайн Сайта  -</p>
                     <a href="#" class="footer-design-author">glukhanko.ru</a>
                 </div>
+              </div>  
             </div>
-        </div>
     </footer>
   </body>
 </html>

@@ -94,15 +94,12 @@ label {
     cursor: pointer;
 }
 
-/*Стили Блока Меню*/
+/*Стили для Верхнего Меню*/
 header {
     padding-bottom: 60px;
     margin-bottom: 22.5px;
     background-color: #f2f6f8;
 }
-
-/*Стили для Верхнего Меню*/
-
 .header-top {
     box-sizing: border-box;
     min-height: 42px;
@@ -121,6 +118,15 @@ header {
 }
 
 .header-logo {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-logo {
     width: 220px;
     padding-bottom: 8px;
     padding-top: 8px;
@@ -135,12 +141,16 @@ header {
     box-shadow: #9a212a 0px 5px 0px 0px;
 }
 
-.header-upper-logo:active {
+.header-logo:active {
     background-color: #ba2732;
     box-shadow: #8e1e26 0px 5px 0px 0px;
 }
-
-.header-upper-search input {
+.header-search input {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
     box-sizing: border-box;
     width: 270px;
     height: 42px;
@@ -154,11 +164,89 @@ header {
     border: none;
 }
 
-.header-upper-search label {
+.header-search input::-webkit-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-search input::-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-search input:-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-search input:-ms-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-search input:focus::-webkit-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-search input:focus::-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-search input:focus:-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-search input:focus:-ms-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-search input {
+    box-sizing: border-box;
+    width: 270px;
+    height: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 49px;
+    outline: 0;
+    border: none;
+    background-color: #293449;
+    outline: none;
+    border: none;
+}
+
+.header-search label {
     position: relative;
 }
 
-.header-upper-search label::before {
+.header-search label::before {
     position: absolute;
     top: 12px;
     left: -252px;
@@ -177,7 +265,6 @@ header {
     cursor: pointer;
     color: #6a7180;
 }
-
 input[type="search"]:hover ~ label::before {
     color: #ffffff;
 }
@@ -187,12 +274,32 @@ input[type="search"]:active ~ label::before {
     color: #ee3643;
 }
 
-.header-upper-search input:focus {
+.header-search input:focus {
     background-color: #ffffff;
 }
 
-.header-upper-cart,
-.header-upper-bookmark {
+.header-cart,
+.header-upper-order,
+.header-bookmark {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-cart:active,
+.header-bookmark:active {
+    color: rgba(255, 255, 255, .6);
+}
+
+.header-order:active {
+    color: rgba(255, 255, 255, .5);
+}
+
+.header-cart,
+.header-bookmark {
     position: relative;
     width: 150px;
     padding-top: 12px;
@@ -200,7 +307,7 @@ input[type="search"]:active ~ label::before {
     padding-left: 44px;
 }
 
-.header-upper-bookmark::before {
+.header-bookmark::before {
     position: absolute;
     top: 12px;
     left: 18px;
@@ -220,15 +327,15 @@ input[type="search"]:active ~ label::before {
     color: #6a7180;
 }
 
-.header-upper-bookmark:hover::before {
+.header-bookmark:hover::before {
     color: #ffffff;
 }
 
-.header-upper-bookmark:active::before {
+.header-bookmark:active::before {
     color: #a2a5a9;
 }
 
-.header-upper-cart::before {
+.header-cart::before {
     position: absolute;
     top: 12px;
     left: 18px;
@@ -248,54 +355,252 @@ input[type="search"]:active ~ label::before {
     color: #6a7180;
 }
 
-.header-upper-cart:hover::before {
+.header-cart:hover::before {
     color: #ffffff;
 }
 
-.header-upper-cart:active::before {
+.header-cart:active::before {
     color: #a2a5a9;
 }
 
-.header-cart-full {
-    background-color: #ee3643;
-}
-
-.header-cart-full::before {
-    color: #f3737c;
-}
-
-.header-upper-cart.header-cart-full:active {
-    background-color: #ba2732;
-}
-
-.header-upper-order {
+.header-order {
     width: 150px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 20px;
     background-color: #63a63e;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-order:active {
+    color: rgba(255, 255, 255, .5);
 }
 
-.header-upper-cart:active,
-.header-upper-bookmark:active {
+.header-cart:active,
+.header-bookmark:active {
     background-color: #161d29;
 }
 
-.header-upper-order:hover {
+.header-order:hover {
     background-color: #5fbb2d;
 }
 
-.header-upper-order:active {
+.header-order:active {
     background-color: #518534;
 }
 
-/**/
-.main-menu{
-  
+
+/*Стили для Среднего Меню*/
+
+
+.header-middle {
+    margin-bottom: 37px;
 }
-.main-menu ul li{
+
+.header-middle-about {
+    float: left;
+    width: 200px;
+    white-space: pre-line;
+    margin-right: 70px;
+    padding-left: 50px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ee3643;
+    font-style: italic;
+}
+
+.header-middle-contacts {
+    float: left;
+    width: 270px;
+}
+
+.header-middle-user {
+    float: right;
+    width: 300px;
+}
+
+.header-contacts-telephone {
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 70px;
+    padding-right: 42px;
+    margin-bottom: 5px;
+    border: 3px solid #ffffff;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
+}
+
+.header-contacts-telephone::before {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    font-size: 18px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\1f4de";
+    color: #b7bfc8;
+}
+
+.header-contacts-address {
+    text-align: center;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #32425c;
+}
+.header-middle-user {
+    float: right;
+    width: 300px;
+}
+.header-middle-user {
+    font-size: 0;
+}
+
+.header-middle-user a:last-child {
+    margin-right: 0;
+}
+
+.header-user-login {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 48px;
+    padding-right: 27px;
+    background-color: #ffffff;
+}
+
+.header-user-login:before {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 20px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\241b";
+    opacity: .3;
+    color: #000000;
+}
+.header-user-registration {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ffffff;
+}
+
+.header-user-login:hover:before {
+    color: #ee3643;
+    opacity: 1;
+}
+
+.header-user-login:active:before {
+    color: #000000;
+    opacity: .3;
+}
+
+.header-user-login,
+.header-block-user,
+.header-user-registration {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-user-login:hover,
+.header-user-registration:hover {
+    color: #ee3643;
+}
+
+.header-user-login:active,
+.header-block-user:active,
+.header-user-registration:active {
+    color: rgba(0, 0, 0, .3);
+}
+.header-user-login,
+.header-user-registration {
     display: inline-block;
 }
+.header-user-login {
+    margin-right: 10px;
+}
+
+
+/*Стили для Нижнего Меню*/
+
+.header-bottom {
+    padding-left: 21px;
+    font-size: 0;
+    background-color: #32425c;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #293449;
+}
+
+.header-bottom ul li {
+    display: inline-block;
+}
+
+.header-bottom a {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 31px;
+    padding-right: 31px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-bottom a:hover {
+    background-color: #293449;
+}
+
+.header-bottom a:active {
+    color: rgba(255, 255, 255, .5);
+    background-color: #293449;
+}
+
+
 /*Блок Предложений*/
 .main-header{
     margin-bottom: 59px;
