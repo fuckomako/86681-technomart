@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normallize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
   </head>
   <body>
     <header class="main-header">
@@ -52,13 +53,13 @@
     <main>
        <div class="container">
         <div class="offer clearfix">
-             <div class="offer-item offer-materials">
-                <p class="offer-item-title">Материал</p>
+             <div class="offer-item offer-materials new-item">
+                <p class="offer-item-title">Материалы</p>
                 <a class="offer-item-link" href="#">На любой вкус</a>
             </div>
             <div class="offer-item offer-tools">
                 <p class="offer-item-title">Инструмент</p>
-                <a class="offer-item-link" href="#">На все случаи жизни</a>
+                <a class="offer-item-link" href="#">На все случаи</a>
             </div>
             <div class="offer-item offer-technics">
                 <p class="offer-item-title">Техника</p>
@@ -67,17 +68,29 @@
         </div>
          
         <div class="slider-wrapper clearfix">    
-            <div class="slider">
-                    <div class="slider-item slider-drills">
-                        <div class="slider-header">
-                            <p class="slider-title">Перфораторы</p>
-                            <p class="slider-info">Настоящие мужские игрушки</p>
+           
+            <div class="offer-slider-block">
+                <input name="offer-slider-controlls" class="offer-slider-drill" type="radio" id="offer-slider-drill" checked>
+                <label for="offer-slider-drill"></label>
+                <input name="offer-slider-controlls" class="offer-slider-perforator" type="radio" id="offer-slider-perforator">
+                <label for="offer-slider-perforator"></label>
+                <label class="offer-left-arrow" for="offer-slider-drill"></label>
+                <label class="offer-right-arrow" for="offer-slider-perforator"></label>
+                <div class="offer-slider-items clearfix">
+                    <div class="offer-slider-item offer-slider-perforators">
+                        <div class="offer-slider-header">
+                            <p class="offer-slider-title">Дрели</p>
+                            <p class="offer-slider-info">Соседям на радость!</p>
                         </div>
-                        <a href="catalog.html" class="slider-btn">открыть каталог</a>
+                        <a href="catalog.html" class="slider-btn">Открыть каталог</a>
                     </div>
-                <div class="slider-controls">
-                    <div class="slider-arrow-left"></div>
-                    <div class="slider-arrow-right"></div>
+                    <div class="offer-slider-item offer-slider-drills">
+                        <div class="offer-slider-header">
+                            <p class="offer-slider-title">Перфораторы</p>
+                            <p class="offer-slider-info">Настоящие мужские игрушки</p>
+                        </div>
+                        <a href="catalog.html" class="slider-btn">Открыть каталог</a>
+                    </div>
                 </div>
             </div>
             
@@ -181,9 +194,8 @@
                 </div>    
             </div>
         
-                       
-            <section class="service">
-               <div class="container">
+        <div class="service">
+            <div class="container">
                 <div class="service-intro">
                     <h2 class="service-title">Сервисы</h2>
                     <p class="service-title-info">Хороший интернет-магазин отличается от плохого не только ценами!</p>
@@ -204,28 +216,26 @@
                         </ul>
                     </div>
                     <div class="right-column service-details-column">
-                        <section class="service-details-block service-details-delivery service-details-active">
+                        <div class="service-details-block service-details-delivery service-details-active">
                             <h2 class="service-details-title">Доставка</h2>
                             <p class="service-details-info service-delivery-info">Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
                             <p class="service-details-info service-delivery-info">Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
-                        </section>
-                        <!--
-                        <section class="service-details-block service-details-warrianty">
+                        </div>
+                        <div class="service-details-block service-details-warrianty">
                             <h2 class="service-details-title">Гарантия</h2>
                             <p class="service-details-info service-warrianty-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
                             <p class="service-details-info service-warrianty-info">Дом уж восстановите как-нибудь сами.</p>
-                        </section>
-                        <section class="service-details-block service-details-credit">
+                        </div>
+                        <div class="service-details-block service-details-credit">
                             <h2 class="service-details-title">Кредит</h2>
                             <p class="service-details-info service-credit-info">Залезть в долговую яму стало проще!</p>
                             <p class="service-details-info service-credit-info">Кредитные консультанты придут вам на помощь.</p>
                             <a href="#" class="service-btn">Отправить заявку</a>
-                        </section>
-                        -->
+                        </div>
                     </div>
                 </div>
-             </div>      
-        </section>     
+            </div>
+        </div>
         
         <div class="company clearfix">
             <div class="container">

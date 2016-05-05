@@ -102,6 +102,10 @@ header {
     background-color: #f2f6f8;
 }
 
+.main-header{
+    margin-bottom: 60px;
+}
+
 .header-top {
     box-sizing: border-box;
     min-height: 42px;
@@ -718,6 +722,18 @@ input[type="search"]:active ~ label::before {
     color: #b7bfc8;
 }
 
+.header-cart-full {
+    background-color: #ee3643;
+}
+
+.header-cart-full::before {
+    color: #f3737c;
+}
+
+.header-upper-cart.header-cart-full:active {
+    background-color: #ba2732;
+}
+
 /*Блок Предложений*/
 
 .offer {
@@ -753,6 +769,30 @@ input[type="search"]:active ~ label::before {
     background: -39px -31px url("../img/sprites.png") no-repeat;
     content: "";
 }
+
+.new-item::before,
+.new-item .catalog-item-buttons::before {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 25px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    top: 10px;
+    right: -30px;
+    color: white;
+    content: "new";
+    background-color: #ee3643;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .offer-tools {
     background-color: #4aafde;
 }
@@ -858,8 +898,8 @@ input[type="search"]:active ~ label::before {
     content: "";
 }
 
-
 /*Блок Popular-block*/
+
 .popular-block {
     padding-top: 28px;
     padding-bottom: 25px;
@@ -904,7 +944,9 @@ input[type="search"]:active ~ label::before {
 .popular-btn:active {
     background-color: #ba2732;
 }
+
 /*Блок Popular-item*/
+
 .popular-item {
     font-size: 0;
     margin-bottom: 31px;
@@ -925,6 +967,7 @@ input[type="search"]:active ~ label::before {
 .popular-item .catalog-item:nth-child(4) {
    margin-right: 0;
 }
+
 .catalog-item-image {
     width: 218px;
     height: 169px;
@@ -1068,6 +1111,7 @@ input[type="search"]:active ~ label::before {
 .catalog-item-bookmark:active {
     border-color: #32425c;
 }
+
 .catalog-item-model,
 .catalog-item-vendor {
     font-family: "PT Sans", sans-serif, Arial;
@@ -1076,6 +1120,7 @@ input[type="search"]:active ~ label::before {
     font-weight: 700;
     color: #000000;
 }
+
 .catalog-item-price,
 .catalog-item-discount {
     font-family: "PT Sans", sans-serif, Arial;
@@ -1085,14 +1130,13 @@ input[type="search"]:active ~ label::before {
     color: #ffffff;
 }
 
+/*Блок бренды*/
 
-
-
-/*Блок брэнды*/
 .brands{
     font-size: 0;
     margin-bottom: 63px;
 }
+
 .brands-logo {
     box-sizing: border-box;
     width: 220px;
@@ -1127,27 +1171,178 @@ input[type="search"]:active ~ label::before {
     padding-top: 64px;
     background-color: #f2f6f8;
 }
+
 .service-intro {
     margin-bottom: 65px;
 }
 
 .service-title {
     margin-bottom: 25px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
+    color: #000000;
 }
-.service-list-column {
+
+.service-title-info {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+} 
+
+.service-list-column .service-list-active {
+    color: #32425c;
+}
+
+.service-list-column ul {
+    position: relative;
     float: left;
     display: block;
     width: 240px;
 }
+
+.service-list-column ul:before {
+    position: absolute;
+    top: -27px;
+    right: 0;
+    width: 10px;
+    min-height: 272px;
+    background: 0 0 no-repeat url("../img/column-delimiter.png");
+    content: "";
+}
+
+.service-list-column a {
+    box-sizing: border-box;
+    height: 60px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    background-color: #32425c;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.service-list-column a:focus {
+    outline: none;
+}
+
+.service-list-column a:hover {
+    background-color: #293449;
+}
+
+.service-list-column .service-list-active {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.service-list-column .service-list-active,
+.service-list-column .service-list-active:hover {
+    background-color: #ffffff;
+}
+
 .service-details-block {
+    position: relative;
+    display: none;
     float: right;
     width: 620px;
     min-height: 284px;
 }
 
+.service-details-title {
+    margin-bottom: 26px;
+}
 
+.service-delivery-info {
+    width: 280px;
+}
+
+.service-warrianty-info + .service-warrianty-info {
+    width: 180px;
+}
+
+.service-details-delivery:before {
+    position: absolute;
+    width: 468px;
+    height: 261px;
+    bottom: 0;
+    right: 0;
+    background: 0 0 no-repeat url("../img/service-details-delivery-background.png");
+    content: "";
+}
+
+.service-warrianty-info {
+    width: 370px;
+}
+
+.service-warrianty-info + .service-warrianty-info {
+    width: 400px;
+}
+
+.service-details-warrianty:before {
+    position: absolute;
+    width: 465px;
+    height: 285px;
+    bottom: 0;
+    right: 0;
+    background: 0 0 no-repeat url("../img/service-credit-background.png");
+    content: "";
+}
+
+.service-credit-info {
+    width: 220px;
+}
+
+.service-credit-info + .service-credit-info {
+    width: 300px;
+    margin-bottom: 29px;
+}
+
+.service-details-credit:before {
+    position: absolute;
+    width: 389px;
+    height: 283px;
+    bottom: 0;
+    right: 0;
+    background: 0 0 no-repeat url("../img/service-details-guarantee-background.png");
+    content: "";
+}
+
+.service-btn {
+    display: block;
+    width: 195px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ee3643;
+}
+
+.service-btn:hover {
+    background-color: #ca2c37;
+}
+
+.service-btn:active {
+    background-color: #ba2732;
+}
+
+.service-details-active {
+    display: block;
+}
 
 /*Блок Company*/
+
 .company {
     padding-top: 85px;
     padding-bottom: 86px;
@@ -1286,6 +1481,7 @@ input[type="search"]:active ~ label::before {
 }
 
 /*Футер*/
+
 footer {
     background-color: #32425c;
 }
@@ -1500,9 +1696,7 @@ footer {
     text-decoration: underline;
 }
 
-
 /*Вертска catalog.html*/
-/* ВЕРСТА МЭЙН БЛОКА */
 
 .breadcrumbs {
     position: relative;
@@ -2217,5 +2411,199 @@ input[type="checkbox"] ~ h3 {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
+}
+
+/*Слайдер*/
+
+.offer-slider-block {
+    position: relative;
+    float: left;
+    width: 620px;
+    min-height: 266px;
+    overflow: hidden;
+}
+
+.offer-slider-items {
+    width: 200%;
+    transition: transform .8s ease;
+}
+
+.offer-slider-item {
+    display: block;
+    float: left;
+    width: 620px;
+    min-height: 266px;
+}
+
+.offer-slider-drill,
+.offer-slider-perforator {
+    display: none;
+}
+
+.offer-slider-drill + label:after,
+.offer-slider-perforator + label:after {
+    position: absolute;
+    top: 220px;
+    left: 300px;
+    display: inline-block;
+    vertical-align: top;
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    z-index: 1000;
+    content: "";
+}
+
+.offer-slider-perforator + label:after {
+    top: 220px;
+    left: 315px;
+}
+
+.offer-slider-drill:checked + label:after,
+.offer-slider-perforator:checked + label:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: #ee3643;
+}
+
+.offer-slider-drill:checked~.offer-slider-items {
+    transform: translate(0);
+}
+
+.offer-slider-perforator:checked~.offer-slider-items {
+    transform: translate(-620px);
+}
+
+.offer-slider-item .slider-btn {
+    margin-left: 24px;
+}
+
+.offer-slider-header {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.offer-slider-title {
+    margin-bottom: 1px;
+}
+
+.offer-slider-drills {
+    background: no-repeat #77685b url("../img/offer-slider-drill.jpg");
+}
+
+.offer-slider-perforators {
+    background: no-repeat #77685b url("../img/offer-slider-perforator.jpg");
+}
+
+.slider-btn {
+    display: block;
+    width: 195px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ee3643;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1010;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slider-btn:hover {
+    background-color: #ca2c37;
+}
+
+.slider-btn:active {
+    background-color: #ba2732;
+}
+
+.offer-block {
+    float: right;
+}
+
+.offer-block .offer-discount {
+    margin-bottom: 20px;
+}
+
+.offer-left-arrow:before {
+    position: absolute;
+    top: 115px;
+    left: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\3c";
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.offer-right-arrow:before {
+    position: absolute;
+    top: 115px;
+    right: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\3e";
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.offer-left-arrow:hover:before,
+.offer-right-arrow:hover:before {
+    color: #fb565a;
+}
+
+.offer-left-arrow:active:before,
+.offer-right-arrow:active:before {
+    color: rgba(255, 255, 255, .6);
+}
+
+.offer-slider-title {
+    margin-bottom: 1px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.offer-slider-info {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
 }
 
