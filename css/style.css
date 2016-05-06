@@ -1,11 +1,14 @@
 
 /*Основные Стили Сайта*/
+
 body{
     min-width: 960px;
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: "PT Sans","Arial",sans-serif;
 }
+
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -71,6 +74,7 @@ body{
     width: 940px;
     margin: 0 auto;
 }
+
 p,
 ul,
 h3,
@@ -424,11 +428,6 @@ input[type="search"]:active ~ label::before {
     width: 270px;
 }
 
-.header-middle-user {
-    float: right;
-    width: 300px;
-}
-
 .header-contacts-telephone {
     position: relative;
     padding-top: 9px;
@@ -471,16 +470,20 @@ input[type="search"]:active ~ label::before {
     font-weight: 400;
     color: #32425c;
 }
+
 .header-middle-user {
     float: right;
-    width: 300px;
-}
-.header-middle-user {
+    width: 285px;
     font-size: 0;
 }
 
 .header-middle-user a:last-child {
     margin-right: 0;
+}
+
+.header-user-login,
+.header-user-registration {
+    display: inline-block;
 }
 
 .header-user-login {
@@ -522,6 +525,8 @@ input[type="search"]:active ~ label::before {
     line-height: 21px;
     font-weight: 400;
     color: #e9292a;
+    color: #000000;
+    text-decoration: none;
     padding-top: 14px;
     padding-bottom: 15px;
     padding-left: 25px;
@@ -964,7 +969,11 @@ input[type="search"]:active ~ label::before {
     overflow: hidden;
 }
 
-.popular-item .catalog-item:nth-child(4) {
+.popular-item .catalog-item:nth-child(3n) {
+   margin-right: 20px;
+}
+
+.popular-item .catalog-item:nth-child(4n) {
    margin-right: 0;
 }
 
@@ -1897,11 +1906,13 @@ footer {
 
 .catalog-min-toggle {
     top: 30px;
+    cursor: pointer;
 }
 
 .catalog-max-toggle {
     top: 30px;
     left: 150px;
+    cursor: pointer;
 }
 
 .catalog-range-filter span,
@@ -2607,3 +2618,459 @@ input[type="checkbox"] ~ h3 {
     text-decoration: none;
 }
 
+/*Стили для формы отзыва*/
+
+.feedback {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    padding-top: 48px;
+    margin-top: -250px;
+    margin-left: -300px;
+    border-top: solid 7px #ee3643;
+    box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+    background-color: #ffffff;
+    z-index: 5000;
+}
+
+.feedback-userdata,
+.feedback-block-buttons {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.feedback-close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.feedback-close:before {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(-45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.feedback-close:after {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.feedback-close:hover:before,
+.feedback-close:hover:after {
+    background-color: #ca2c37;
+}
+
+.feedback-close:active:before,
+.feedback-close:active:after {
+    background-color: #ba2732;
+}
+
+.feedback-left-column {
+    float: left;
+    width: 220px;
+}
+
+.feedback-right-column {
+    float: right;
+    width: 220px;
+}
+
+.feedback-block {
+    margin-bottom: 22px;
+}
+
+.feedback-data,
+.feedback-block label {
+    margin-bottom: 9px;
+}
+
+.feedback-block input {
+    width: 202px;
+    padding-top: 9.5px;
+    padding-bottom: 7.5px;
+    padding-left: 14px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 440px;
+    height: 98.5px;
+    padding-top: 9.5px;
+    padding-left: 14px;
+    margin-bottom: 30px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+}
+
+textarea:focus,
+.feedback-block input:focus {
+    outline: none;
+}
+
+.feedback-block-buttons {
+    background-color: #f1f1f1;
+}
+
+.feedback-block-buttons {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    font-size: 0;
+}
+
+.feedback-btn:last-child {
+    margin-right: 0;
+}
+
+.feedback-btn,
+.feedback-cancel {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 78px;
+    padding-right: 81px;
+    margin-right: 20px;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ee3643;
+}
+
+.feedback-btn:hover {
+    background-color: #ca2c37;
+}
+
+.feedback-btn:active {
+    background-color: #ba2732;
+}
+
+.feedback-cancel {
+    padding-left: 85px;
+    padding-right: 89px;
+    background-color: #ffffff;
+}
+
+.feedback-cancel:hover {
+    color: #ee3643;
+    background-color: #ffffff;
+}
+
+.feedback-cancel:active {
+    color: rgba(0, 0, 0, .6);
+    background-color: #ffffff;
+}
+
+.feedback-btn {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.feedback-data {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.feedback-cancel {
+    color: #000000;
+}
+
+.feedback input,
+.feedback textarea {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.feedback input::-moz-placeholder,
+.feedback textarea::-moz-placeholder {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.feedback input:-moz-placeholder,
+.feedback textarea:-moz-placeholder {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.feedback input:-ms-input-placeholder,
+.feedback textarea:-ms-input-placeholder {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Стили для карты*/
+
+.company-map {
+    display: block;
+    width: 300px;
+    height: 160px;
+    margin-bottom: 38px;
+}
+
+.company-map:focus {
+    outline: none;
+}
+
+.map {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 940px;
+    height: 447px;
+    margin-left: -470px;
+    margin-top: -230px;
+    box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+    z-index: 5000;
+}
+
+.map-close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.map-close:before {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(-45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.map-close:after {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.map-close:hover:before,
+.map-close:hover:after {
+    background-color: #ca2c37;
+}
+
+.map-close:active:before,
+.map-close:active:after {
+    background-color: #ba2732;
+}
+
+/*Окно при добавлении товара в корзину*/
+
+.cart-notification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    padding-top: 66px;
+    margin-top: -200px;
+    margin-left: -300px;
+    background-color: #ffffff;
+    border-top: solid 7px #ee3643;
+    box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+    z-index: 5000;
+}
+
+.cart-notification-close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.cart-notification-close:before {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(-45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.cart-notification-close:after {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    width: 25px;
+    height: 5px;
+    transform: rotate(45deg);
+    background: #ee3643;
+    font-size: 40px;
+    font-weight: 400;
+    content: "";
+}
+
+.cart-notification-close:hover:before,
+.cart-notification-close:hover:after {
+    background-color: #ca2c37;
+}
+
+.cart-notification-close:active:before,
+.cart-notification-close:active:after {
+    background-color: #ba2732;
+}
+
+.cart-notification-title {
+    position: relative;
+    margin-left: 180px;
+    margin-bottom: 68px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    color: #000000;
+}
+
+.cart-notification-title:before {
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    width: 65px;
+    height: 65px;
+    background: -21px -616px url("../img/sprites.png") no-repeat;
+    content: "";
+}
+
+.cart-notification-decision {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 80px;
+    font-size: 0;
+    background-color: #f1f1f1;
+}
+
+.cart-order-btn,
+.cart-cancel-btn {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    margin-right: 20px;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cart-order-btn {
+    padding-left: 59px;
+    padding-right: 62px;
+    background-color: #ee3643;
+}
+
+.cart-order-btn:hover {
+    background-color: #ca2c37;
+}
+
+.cart-order-btn:active {
+    background-color: #ba2732;
+}
+
+.cart-cancel-btn {
+    padding-left: 44px;
+    padding-right: 48px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cart-cancel-btn:hover {
+    color: #ee3643;
+}
+
+.cart-cancel-btn:active {
+    color: rgba(0, 0, 0, .6);
+}
+
+.show-block {
+    display: block;
+    -webkit-animation: bounce 0.6s;
+    animation: bounce 0.6s;    
+}
