@@ -8,6 +8,7 @@ var feedbackCancel = document.querySelector(".feedback-cancel");
         feedbackPopup.classList.add("show-block");
     });
 
+   
     feedbackClose.addEventListener("click", function (event) {
         event.preventDefault(event);
         feedbackPopup.classList.remove("show-block");

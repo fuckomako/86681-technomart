@@ -238,20 +238,6 @@ header {
     color: #000000;
 }
 
-.header-search input {
-    box-sizing: border-box;
-    width: 270px;
-    height: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 49px;
-    outline: 0;
-    border: none;
-    background-color: #293449;
-    outline: none;
-    border: none;
-}
-
 .header-search label {
     position: relative;
 }
