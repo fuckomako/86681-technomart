@@ -936,31 +936,18 @@ input[type="search"]:active ~ label::before {
     background-color: #ba2732;
 }
 
-/*Блок Popular-item*/
+/*Блок Популярные товары*/
 
 .popular-item {
     font-size: 0;
-    margin-bottom: 31px;
-}
-.popular-item .catalog-item {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    width: 220px;
-    min-height: 318px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #e5e5e5;
-    overflow: hidden;
 }
 
 .popular-item .catalog-item:nth-child(3n) {
-   margin-right: 20px;
+    margin-right: 20px;
 }
 
 .popular-item .catalog-item:nth-child(4n) {
-   margin-right: 0;
+    margin-right: 0;
 }
 
 .catalog-item-image {
@@ -977,10 +964,6 @@ input[type="search"]:active ~ label::before {
 }
 .catalog-item-model {
     margin-bottom: 11.5px;
-}
-
-.catalog-item-price {
-    margin-bottom: 7.5px;
 }
 
 .catalog-item-discount {
@@ -1190,15 +1173,25 @@ input[type="search"]:active ~ label::before {
     color: #000000;
 } 
 
-.service-list-column .service-list-active {
+.service-list-column .service-list-item-active a {
     color: #32425c;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: #ffffff;
+}
+.service-list-column .service-list-item-active a:hover {
+    background-color: #ffffff;
 }
 
-.service-list-column ul {
-    position: relative;
+.service-list-column {
     float: left;
-    display: block;
     width: 240px;
+}
+
+
+.service-list-column ul {
+    display: block;
+    width: 100%;
 }
 
 .service-list-column ul:before {
@@ -1211,7 +1204,7 @@ input[type="search"]:active ~ label::before {
     content: "";
 }
 
-.service-list-column a {
+.service-list-item a {
     box-sizing: border-box;
     height: 60px;
     display: block;
@@ -1237,16 +1230,6 @@ input[type="search"]:active ~ label::before {
     background-color: #293449;
 }
 
-.service-list-column .service-list-active {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-}
-
-.service-list-column .service-list-active,
-.service-list-column .service-list-active:hover {
-    background-color: #ffffff;
-}
-
 .service-details-block {
     position: relative;
     display: none;
@@ -1263,29 +1246,23 @@ input[type="search"]:active ~ label::before {
     width: 280px;
 }
 
-.service-warrianty-info + .service-warrianty-info {
+.service-warranty-info + .service-warranty-info {
     width: 180px;
 }
 
-.service-details-delivery:before {
-    position: absolute;
-    width: 468px;
-    height: 261px;
-    bottom: 0;
-    right: 0;
+.service-details-delivery {
     background: 0 0 no-repeat url("../img/service-details-delivery-background.png");
-    content: "";
 }
 
-.service-warrianty-info {
+.service-warranty-info {
     width: 370px;
 }
 
-.service-warrianty-info + .service-warrianty-info {
+.service-warranty-info + .service-warranty-info {
     width: 400px;
 }
 
-.service-details-warrianty:before {
+.service-details-warranty:before {
     position: absolute;
     width: 465px;
     height: 285px;
@@ -2221,6 +2198,8 @@ input[type="checkbox"] ~ h3 {
 
 .catalog-item-price {
     margin-bottom: 7.5px;
+    color: #999999;
+    text-decoration: line-through;
 }
 
 .catalog-item-discount {
