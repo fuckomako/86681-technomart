@@ -128,15 +128,6 @@ header {
 }
 
 .header-logo {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 24px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.header-logo {
     width: 220px;
     padding-bottom: 8px;
     padding-top: 8px;
@@ -144,6 +135,13 @@ header {
     padding-right: 50px;
     background-color: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .header-logo:hover {
@@ -156,11 +154,6 @@ header {
     box-shadow: #8e1e26 0px 5px 0px 0px;
 }
 .header-search input {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #000000;
     box-sizing: border-box;
     width: 270px;
     height: 42px;
@@ -172,17 +165,14 @@ header {
     background-color: #293449;
     outline: none;
     border: none;
-}
-
-.header-search input::-webkit-input-placeholder {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
 }
 
-.header-search input::-moz-placeholder {
+.header-search input::-webkit-input-placeholder {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 17px;
     line-height: 18px;
@@ -215,14 +205,6 @@ header {
 }
 
 .header-search input:focus::-moz-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #000000;
-}
-
-.header-search input:focus:-moz-placeholder {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 17px;
     line-height: 18px;
@@ -288,10 +270,7 @@ input[type="search"]:active ~ label::before {
 .header-cart:active,
 .header-bookmark:active {
     color: rgba(255, 255, 255, .6);
-}
-
-.header-order:active {
-    color: rgba(255, 255, 255, .5);
+    background-color: #161d29;
 }
 
 .header-cart,
@@ -374,11 +353,6 @@ input[type="search"]:active ~ label::before {
 }
 .header-order:active {
     color: rgba(255, 255, 255, .5);
-}
-
-.header-cart:active,
-.header-bookmark:active {
-    background-color: #161d29;
 }
 
 .header-order:hover {
@@ -467,23 +441,19 @@ input[type="search"]:active ~ label::before {
     margin-right: 0;
 }
 
-.header-user-login,
-.header-user-registration {
-    display: inline-block;
-}
-
 .header-user-login {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #e9292a;
     position: relative;
     padding-top: 14px;
     padding-bottom: 15px;
     padding-left: 48px;
     padding-right: 27px;
+    margin-right: 10px;
     background-color: #ffffff;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
 }
 
 .header-user-login:before {
@@ -506,18 +476,17 @@ input[type="search"]:active ~ label::before {
     color: #000000;
 }
 .header-user-registration {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #e9292a;
-    color: #000000;
-    text-decoration: none;
     padding-top: 14px;
     padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
     background-color: #ffffff;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #e9292a;
+    text-decoration: none;
 }
 
 .header-user-login:hover:before {
@@ -532,6 +501,7 @@ input[type="search"]:active ~ label::before {
 
 .header-user-login,
 .header-user-registration {
+    display: inline-block;
     color: #000000;
     text-decoration: none;
 }
@@ -546,13 +516,6 @@ input[type="search"]:active ~ label::before {
 .header-user-registration:active {
     color: rgba(0, 0, 0, .3);
 }
-.header-user-login,
-.header-user-registration {
-    display: inline-block;
-}
-.header-user-login {
-    margin-right: 10px;
-}
 
 /*Стили для Нижнего Меню*/
 
@@ -565,7 +528,7 @@ input[type="search"]:active ~ label::before {
     border-bottom-color: #293449;
 }
 
-.header-bottom ul li {
+.main-menu li {
     display: inline-block;
 }
 
@@ -812,22 +775,15 @@ input[type="search"]:active ~ label::before {
 }
 
 .offer-item-title {
+    margin-bottom: 15px;
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 15px;
 }
 .offer-item-link{
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
     display: block;
     text-align: center;
     width: 135px;
@@ -835,6 +791,13 @@ input[type="search"]:active ~ label::before {
     padding-bottom: 10px;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .offer-item-link:hover {
     background-color: rgba(0, 0, 0, .2);
@@ -889,7 +852,201 @@ input[type="search"]:active ~ label::before {
     content: "";
 }
 
-/*Блок Popular-block*/
+/*Слайдер*/
+
+.offer-slider {
+    position: relative;
+    float: left;
+    width: 620px;
+    min-height: 266px;
+    overflow: hidden;
+}
+
+.offer-slider-items {
+    width: 200%;
+    transition: transform .8s ease;
+}
+
+.offer-slider-item {
+    display: block;
+    float: left;
+    width: 620px;
+    min-height: 266px;
+}
+
+.offer-slider-drill,
+.offer-slider-perforator {
+    display: none;
+}
+
+.offer-slider-drill + label:after,
+.offer-slider-perforator + label:after {
+    position: absolute;
+    top: 220px;
+    left: 300px;
+    display: inline-block;
+    vertical-align: top;
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    z-index: 1000;
+    content: "";
+}
+
+.offer-slider-perforator + label:after {
+    top: 220px;
+    left: 315px;
+}
+
+.offer-slider-drill:checked + label:after,
+.offer-slider-perforator:checked + label:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: #ee3643;
+}
+
+.offer-slider-drill:checked~.offer-slider-items {
+    transform: translate(0);
+}
+
+.offer-slider-perforator:checked~.offer-slider-items {
+    transform: translate(-620px);
+}
+
+.offer-slider-item .slider-btn {
+    margin-left: 24px;
+}
+
+.offer-slider-header {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.offer-slider-title {
+    margin-bottom: 1px;
+}
+
+.offer-slider-drills {
+    background: no-repeat #77685b url("../img/offer-slider-drill.jpg");
+}
+
+.offer-slider-perforators {
+    background: no-repeat #77685b url("../img/offer-slider-perforator.jpg");
+}
+
+.slider-btn {
+    display: block;
+    width: 195px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ee3643;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1010;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slider-btn:hover {
+    background-color: #ca2c37;
+}
+
+.slider-btn:active {
+    background-color: #ba2732;
+}
+
+.offer-block {
+    float: right;
+}
+
+.offer-block .offer-discount {
+    margin-bottom: 20px;
+}
+
+.offer-left-arrow:before {
+    position: absolute;
+    top: 115px;
+    left: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\3c";
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.offer-right-arrow:before {
+    position: absolute;
+    top: 115px;
+    right: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\3e";
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.offer-left-arrow:hover:before,
+.offer-right-arrow:hover:before {
+    color: #fb565a;
+}
+
+.offer-left-arrow:active:before,
+.offer-right-arrow:active:before {
+    color: rgba(255, 255, 255, .6);
+}
+
+.offer-slider-title {
+    margin-bottom: 1px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.offer-slider-info {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Блок Популярные Производители*/
 
 .popular-block {
     padding-top: 28px;
@@ -899,25 +1056,18 @@ input[type="search"]:active ~ label::before {
 }
 
 .popular-title {
+    float: left;
+    width: 380px;
+    margin-left: 30px;
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
     color: #32425c;
     text-transform: uppercase;
-    float: left;
-    width: 380px;
-    margin-left: 30px;
 }
 
 .popular-btn {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
     float: right;
     width: 250px;
     display: block;
@@ -927,6 +1077,13 @@ input[type="search"]:active ~ label::before {
     margin-right: 24px;
     background-color: #ee3643;
     border-radius: 5px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .popular-btn:hover {
     background-color: #ca2c37;
@@ -950,22 +1107,6 @@ input[type="search"]:active ~ label::before {
     margin-right: 0;
 }
 
-.catalog-item-image {
-    width: 218px;
-    height: 169px;
-    margin-bottom: 12px;
-}
-.catalog-item-model,
-.catalog-item-price,
-.catalog-item-vendor,
-.catalog-item-discount {
-    text-align: center;
-    margin: 0 auto;
-}
-.catalog-item-model {
-    margin-bottom: 11.5px;
-}
-
 .catalog-item-discount {
     position: relative;
     width: 122px;
@@ -986,10 +1127,6 @@ input[type="search"]:active ~ label::before {
     border-width: 19px 0 19px 20px;
     border-color: transparent transparent transparent #ee3643;
     content: "";
-}
-
-.catalog-item-model + .catalog-item-discount {
-    margin-top: 37px;
 }
 
 .catalog-item-buttons {
@@ -1313,7 +1450,7 @@ input[type="search"]:active ~ label::before {
     display: block;
 }
 
-/*Блок Company*/
+/*Блок О Компании*/
 
 .company {
     padding-top: 85px;
@@ -1338,7 +1475,6 @@ input[type="search"]:active ~ label::before {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    color: #32425c;
     text-transform: uppercase;
     color: #000000;
 }
@@ -1355,7 +1491,7 @@ input[type="search"]:active ~ label::before {
 
 .company-about-info + .company-about-info {
     width: 390px;
-    margin-bottom: 21.5px;
+    margin-bottom: 22px;
 }
 
 .company-about-list {
@@ -1416,6 +1552,10 @@ input[type="search"]:active ~ label::before {
     background-color: #ba2732;
 }
 
+.company-feedback-btn {
+    width: 100%;
+}
+
 .company-contacts-title{
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 30px;
@@ -1446,10 +1586,6 @@ input[type="search"]:active ~ label::before {
 
 .company-contacts-map:focus {
     outline: none;
-}
-
-.company-feedback-btn {
-    width: 100%;
 }
 
 /*Футер*/
@@ -2193,36 +2329,13 @@ input[type="checkbox"] ~ h3 {
 }
 
 .catalog-item-model {
-    margin-bottom: 11.5px;
+    margin-bottom: 12px;
 }
 
 .catalog-item-price {
-    margin-bottom: 7.5px;
+    margin-bottom: 8px;
     color: #999999;
     text-decoration: line-through;
-}
-
-.catalog-item-discount {
-    position: relative;
-    width: 122px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    background-color: #ee3643;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.catalog-item-discount::after {
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 19px 0 19px 20px;
-    border-color: transparent transparent transparent #ee3643;
-    content: "";
 }
 
 .catalog-item-model + .catalog-item-discount {
@@ -2323,10 +2436,7 @@ input[type="checkbox"] ~ h3 {
 .catalog-paginator a,
 .catalog-paginator span {
     display: inline-block;
-}
-
-.catalog-paginator a,
-.catalog-paginator span {
+    vertical-align: top;
     padding-top: 9.5px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -2364,7 +2474,9 @@ input[type="checkbox"] ~ h3 {
     border: 1px solid #ee3643;
     background-color: #ee3643;
 }
+
 /*Блок о Перфораторах*/
+
 .catalog-description {
     padding-top: 65px;
     padding-bottom: 68px;
@@ -2387,200 +2499,6 @@ input[type="checkbox"] ~ h3 {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-}
-
-/*Слайдер*/
-
-.offer-slider-block {
-    position: relative;
-    float: left;
-    width: 620px;
-    min-height: 266px;
-    overflow: hidden;
-}
-
-.offer-slider-items {
-    width: 200%;
-    transition: transform .8s ease;
-}
-
-.offer-slider-item {
-    display: block;
-    float: left;
-    width: 620px;
-    min-height: 266px;
-}
-
-.offer-slider-drill,
-.offer-slider-perforator {
-    display: none;
-}
-
-.offer-slider-drill + label:after,
-.offer-slider-perforator + label:after {
-    position: absolute;
-    top: 220px;
-    left: 300px;
-    display: inline-block;
-    vertical-align: top;
-    width: 4px;
-    height: 4px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    z-index: 1000;
-    content: "";
-}
-
-.offer-slider-perforator + label:after {
-    top: 220px;
-    left: 315px;
-}
-
-.offer-slider-drill:checked + label:after,
-.offer-slider-perforator:checked + label:after {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    background-color: #ee3643;
-}
-
-.offer-slider-drill:checked~.offer-slider-items {
-    transform: translate(0);
-}
-
-.offer-slider-perforator:checked~.offer-slider-items {
-    transform: translate(-620px);
-}
-
-.offer-slider-item .slider-btn {
-    margin-left: 24px;
-}
-
-.offer-slider-header {
-    padding-top: 22px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    margin-bottom: 100px;
-    background-color: rgba(0, 0, 0, .25);
-}
-
-.offer-slider-title {
-    margin-bottom: 1px;
-}
-
-.offer-slider-drills {
-    background: no-repeat #77685b url("../img/offer-slider-drill.jpg");
-}
-
-.offer-slider-perforators {
-    background: no-repeat #77685b url("../img/offer-slider-perforator.jpg");
-}
-
-.slider-btn {
-    display: block;
-    width: 195px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #ee3643;
-    text-align: center;
-    border-radius: 5px;
-    z-index: 1010;
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.slider-btn:hover {
-    background-color: #ca2c37;
-}
-
-.slider-btn:active {
-    background-color: #ba2732;
-}
-
-.offer-block {
-    float: right;
-}
-
-.offer-block .offer-discount {
-    margin-bottom: 20px;
-}
-
-.offer-left-arrow:before {
-    position: absolute;
-    top: 115px;
-    left: 24px;
-    font-size: 40px;
-    line-height: 40px;
-    font-family: "symbols-technomart";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    vertical-align: top;
-    text-decoration: inherit;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    content: "\3c";
-    color: #ffffff;
-    z-index: 1000;
-}
-
-.offer-right-arrow:before {
-    position: absolute;
-    top: 115px;
-    right: 24px;
-    font-size: 40px;
-    line-height: 40px;
-    font-family: "symbols-technomart";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    vertical-align: top;
-    text-decoration: inherit;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    content: "\3e";
-    color: #ffffff;
-    z-index: 1000;
-}
-
-.offer-left-arrow:hover:before,
-.offer-right-arrow:hover:before {
-    color: #fb565a;
-}
-
-.offer-left-arrow:active:before,
-.offer-right-arrow:active:before {
-    color: rgba(255, 255, 255, .6);
-}
-
-.offer-slider-title {
-    margin-bottom: 1px;
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.offer-slider-info {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
 }
 
 /*Стили для формы отзыва*/

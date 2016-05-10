@@ -52,17 +52,17 @@ window.addEventListener("keydown", function (event) {
     }
 });
 
-var buyItemButtons = document.querySelectorAll(".catalog-item-buy");
+var buyItemButtons = document.querySelectorAll(".catalog-item-buy"), i;
 var cartBlock = document.querySelector(".cart-notification");
 var cartClose = document.querySelector(".cart-notification-close");
 var cartCancel = document.querySelector(".cart-cancel-btn");
 
-
-	buyItemButtons.addEventListener("click", function (event) {
+for (i = 0; i < buyItemButtons.length; ++i) {
+	buyItemButtons[i].addEventListener("click", function (event) {
 		event.preventDefault(event);
 		cartBlock.classList.add("show-block");
 	})
-
+}
 
 cartClose.addEventListener("click", function (event) {
 	event.preventDefault(event);
