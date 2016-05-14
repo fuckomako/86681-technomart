@@ -30,6 +30,31 @@ var feedbackLogin = feedbackPopup.querySelector("[name=login]");
     });
 
 
+var sliderDeliveryLink = document.querySelector("#delivery");
+var sliderDeliveryBlock = document.querySelector(".service-details-delivery");
+var sliderWarranryLink = document.querySelector("#warranty");
+var sliderWarrantyBlock = document.querySelector(".service-details-warranty");
+var sliderCreditLink = document.querySelector("#credit");
+var sliderCreditBlock = document.querySelector(".service-details-credit");
+
+sliderDeliveryLink.addEventListener("click",function(event){
+    event.preventDefault(event);
+    sliderDeliveryBlock.classList.add("show-block");
+});
+
+sliderWarranryLink.addEventListener("click",function(event){
+    event.preventDefault(event);
+    sliderWarrantyBlock.classList.add("show-block");
+    
+});
+
+sliderCreditLink.addEventListener("click",function(event){
+    event.preventDefault(event);
+    sliderCreditBlock.classList.add("show-block");
+});
+
+
+
 var mapLink = document.querySelector(".company-map");
 var mapPopup = document.querySelector(".map");
 var mapClose = document.querySelector(".map-close");

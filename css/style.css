@@ -169,7 +169,7 @@ header {
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
 }
 
 .header-search input::-webkit-input-placeholder {
@@ -781,7 +781,6 @@ input[type="search"]:active ~ label::before {
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
-    text-transform: uppercase;
 }
 .offer-item-link{
     display: block;
@@ -1321,6 +1320,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .service-list-column {
+    position: relative;
     float: left;
     width: 240px;
 }
@@ -1367,16 +1367,14 @@ input[type="search"]:active ~ label::before {
     background-color: #293449;
 }
 
-.service-details-block {
-    position: relative;
-    display: none;
-    float: right;
-    width: 620px;
-    min-height: 284px;
-}
-
 .service-details-title {
     margin-bottom: 26px;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
 }
 
 .service-delivery-info {
@@ -1388,7 +1386,27 @@ input[type="search"]:active ~ label::before {
 }
 
 .service-details-delivery {
+    display: block;
+    float: right;
+    width: 620px;
+    min-height: 284px;
     background: 0 0 no-repeat url("../img/service-details-delivery-background.png");
+}
+
+.service-details-warranty {
+    display: none;
+    float: right;
+    width: 620px;
+    min-height: 284px;
+    background: 0 0 no-repeat url("../img/service-credit-background.png");
+}
+
+.service-details-credit {
+    display: none;
+    float: right;
+    width: 620px;
+    min-height: 284px;
+    background: 0 0 no-repeat url("../img/service-details-guarantee-background.png");
 }
 
 .service-warranty-info {
@@ -1397,16 +1415,6 @@ input[type="search"]:active ~ label::before {
 
 .service-warranty-info + .service-warranty-info {
     width: 400px;
-}
-
-.service-details-warranty:before {
-    position: absolute;
-    width: 465px;
-    height: 285px;
-    bottom: 0;
-    right: 0;
-    background: 0 0 no-repeat url("../img/service-credit-background.png");
-    content: "";
 }
 
 .service-credit-info {
@@ -1418,16 +1426,6 @@ input[type="search"]:active ~ label::before {
     margin-bottom: 29px;
 }
 
-.service-details-credit:before {
-    position: absolute;
-    width: 389px;
-    height: 283px;
-    bottom: 0;
-    right: 0;
-    background: 0 0 no-repeat url("../img/service-details-guarantee-background.png");
-    content: "";
-}
-
 .service-btn {
     display: block;
     width: 195px;
@@ -1436,6 +1434,13 @@ input[type="search"]:active ~ label::before {
     text-align: center;
     border-radius: 5px;
     background-color: #ee3643;
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .service-btn:hover {
@@ -1447,7 +1452,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .service-details-active {
-    display: block;
+    display: none;
 }
 
 /*Блок О Компании*/
