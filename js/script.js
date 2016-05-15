@@ -30,28 +30,27 @@ var feedbackLogin = feedbackPopup.querySelector("[name=login]");
     });
 
 
-var sliderDeliveryLink = document.querySelector("#delivery");
-var sliderDeliveryBlock = document.querySelector(".service-details-delivery");
-var sliderWarranryLink = document.querySelector("#warranty");
-var sliderWarrantyBlock = document.querySelector(".service-details-warranty");
-var sliderCreditLink = document.querySelector("#credit");
-var sliderCreditBlock = document.querySelector(".service-details-credit");
+var serviceLinks = document.querySelectorAll(".service-list-column a");
+var serviceBlocks = document.querySelectorAll(".service-details-block");
+var j, h, k;
 
-sliderDeliveryLink.addEventListener("click",function(event){
-    event.preventDefault(event);
-    sliderDeliveryBlock.classList.add("show-block");
-});
-
-sliderWarranryLink.addEventListener("click",function(event){
-    event.preventDefault(event);
-    sliderWarrantyBlock.classList.add("show-block");
-    
-});
-
-sliderCreditLink.addEventListener("click",function(event){
-    event.preventDefault(event);
-    sliderCreditBlock.classList.add("show-block");
-});
+for (i = 0; i < serviceLinks.length; ++i) {
+	serviceLinks[i].addEventListener("click", function (event) {
+		event.preventDefault(event);
+        for (j = 0; j < serviceLinks.length; ++j) {
+            serviceLinks[j].classList.remove("service-list-active");        
+        }
+        for (h = 0; h < serviceLinks.length; ++h) {
+            if (serviceLinks[h] == this) {
+                serviceLinks[h].classList.add("service-list-active");
+                for (k = 0; k < serviceBlocks.length; ++k) {
+                    serviceBlocks[k].classList.remove("service-details-active");
+                }
+                serviceBlocks[h].classList.add("service-details-active");
+            }
+        }
+	})
+}
 
 
 
