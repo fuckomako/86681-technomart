@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: "PT Sans","Arial",sans-serif;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
 @font-face {
@@ -135,7 +135,7 @@ header {
     padding-right: 50px;
     background-color: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 24px;
     line-height: 26px;
     font-weight: 700;
@@ -165,7 +165,7 @@ header {
     background-color: #293449;
     outline: none;
     border: none;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -173,7 +173,7 @@ header {
 }
 
 .header-search input::-webkit-input-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -181,7 +181,7 @@ header {
 }
 
 .header-search input:-moz-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -189,7 +189,7 @@ header {
 }
 
 .header-search input:-ms-input-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -197,7 +197,7 @@ header {
 }
 
 .header-search input:focus::-webkit-input-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -205,7 +205,7 @@ header {
 }
 
 .header-search input:focus::-moz-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -213,7 +213,7 @@ header {
 }
 
 .header-search input:focus:-ms-input-placeholder {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -259,7 +259,7 @@ input[type="search"]:active ~ label::before {
 .header-cart,
 .header-upper-order,
 .header-bookmark {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -344,7 +344,7 @@ input[type="search"]:active ~ label::before {
     padding-bottom: 12px;
     padding-left: 20px;
     background-color: #63a63e;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -375,7 +375,7 @@ input[type="search"]:active ~ label::before {
     white-space: pre-line;
     margin-right: 70px;
     padding-left: 50px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 23px;
     font-weight: 400;
@@ -396,7 +396,7 @@ input[type="search"]:active ~ label::before {
     padding-right: 42px;
     margin-bottom: 5px;
     border: 3px solid #ffffff;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -424,7 +424,7 @@ input[type="search"]:active ~ label::before {
 
 .header-contacts-address {
     text-align: center;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -449,7 +449,7 @@ input[type="search"]:active ~ label::before {
     padding-right: 27px;
     margin-right: 10px;
     background-color: #ffffff;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -481,7 +481,7 @@ input[type="search"]:active ~ label::before {
     padding-left: 25px;
     padding-right: 25px;
     background-color: #ffffff;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -539,7 +539,7 @@ input[type="search"]:active ~ label::before {
     padding-bottom: 18px;
     padding-left: 31px;
     padding-right: 31px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 17px;
     font-weight: 400;
@@ -559,7 +559,7 @@ input[type="search"]:active ~ label::before {
 /*Личный Кабинет Пользователя*/
 
 .header-block-user {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -657,7 +657,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .header-links-element {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -665,7 +665,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .header-links-element:hover {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -731,7 +731,7 @@ input[type="search"]:active ~ label::before {
     vertical-align: top;
     width: 100px;
     height: 25px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 17px;
@@ -776,7 +776,7 @@ input[type="search"]:active ~ label::before {
 
 .offer-item-title {
     margin-bottom: 15px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -790,7 +790,7 @@ input[type="search"]:active ~ label::before {
     padding-bottom: 10px;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -949,7 +949,7 @@ input[type="search"]:active ~ label::before {
     text-align: center;
     border-radius: 5px;
     z-index: 1010;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1028,7 +1028,7 @@ input[type="search"]:active ~ label::before {
 
 .offer-slider-title {
     margin-bottom: 1px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -1037,7 +1037,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .offer-slider-info {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1058,7 +1058,7 @@ input[type="search"]:active ~ label::before {
     float: left;
     width: 380px;
     margin-left: 30px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1076,7 +1076,7 @@ input[type="search"]:active ~ label::before {
     margin-right: 24px;
     background-color: #ee3643;
     border-radius: 5px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1159,7 +1159,7 @@ input[type="search"]:active ~ label::before {
     margin-bottom: 7px;
     border-radius: 5px;
     box-shadow: inset 0px -3px 0px 0px rgba(54, 115, 21, 1);
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1209,7 +1209,7 @@ input[type="search"]:active ~ label::before {
     padding-bottom: 9px;
     border-radius: 5px;
     border: solid 3px #63a63e;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1228,7 +1228,7 @@ input[type="search"]:active ~ label::before {
 
 .catalog-item-model,
 .catalog-item-vendor {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1237,7 +1237,7 @@ input[type="search"]:active ~ label::before {
 
 .catalog-item-price,
 .catalog-item-discount {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -1292,7 +1292,7 @@ input[type="search"]:active ~ label::before {
 
 .service-title {
     margin-bottom: 25px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1301,7 +1301,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .service-title-info {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1335,7 +1335,7 @@ input[type="search"]:active ~ label::before {
     background-color: #32425c;
     border-bottom: 1px solid #293449;
     border-top: 1px solid #405069;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
@@ -1372,7 +1372,7 @@ input[type="search"]:active ~ label::before {
 
 .service-details-title {
     margin-bottom: 26px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -1381,7 +1381,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .service-details-info {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1451,7 +1451,7 @@ input[type="search"]:active ~ label::before {
     text-align: center;
     border-radius: 5px;
     background-color: #ee3643;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1489,7 +1489,7 @@ input[type="search"]:active ~ label::before {
     margin-bottom: 25px;
 }
 .company-about-title{
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1500,7 +1500,7 @@ input[type="search"]:active ~ label::before {
 .company-about-info {
     width: 520px;
     margin-bottom: 23px;
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1520,7 +1520,7 @@ input[type="search"]:active ~ label::before {
 .company-about-list li {
     position: relative;
     margin-bottom: 20px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
@@ -1551,7 +1551,7 @@ input[type="search"]:active ~ label::before {
     margin-right: 24px;
     background-color: #ee3643;
     border-radius: 5px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1575,7 +1575,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .company-contacts-title{
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1588,7 +1588,7 @@ input[type="search"]:active ~ label::before {
 .company-contacts-info {
     width: 180px;
     margin-bottom: 31px;
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1623,7 +1623,7 @@ footer {
     text-align: center;
     background-color: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
@@ -1656,7 +1656,7 @@ footer {
     margin-right: 0;
 }
 .footer-contacts a {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1676,7 +1676,7 @@ footer {
 .footer-address{
     float: left;
     width: 330px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1701,7 +1701,7 @@ footer {
 .footer-offer a {
     color: #ffd180;
     text-decoration: none;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1724,7 +1724,7 @@ footer {
     float: left;
     width: 240px;
     margin-right: 150px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -1790,7 +1790,7 @@ footer {
 .footer-bottom-feedback{
     float: left;
     width: 135px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -1807,7 +1807,7 @@ footer {
 .footer-bottom-design{
     float: right;
     width: 110px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -1875,7 +1875,7 @@ footer {
 }
 .breadcrumbs a,
 .breadcrumbs span{
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -1887,7 +1887,7 @@ footer {
 /* ВЕРСТАЕМ ПАНЕЛЬ ФИЛЬТРОВ */
 
 .catalog-title {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1926,7 +1926,7 @@ footer {
 }
 
 .catalog-filter-column p {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -1936,7 +1936,7 @@ footer {
 }
 
 .catalog-filter-column h3 {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
@@ -1945,7 +1945,7 @@ footer {
     text-transform: uppercase;
 }
 .catalog-filter-column label {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
@@ -1956,7 +1956,7 @@ footer {
 }
 .catalog-filter-column span,
 .catalog-filter-column input[type="text"] {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -2160,7 +2160,7 @@ input[type="checkbox"] ~ h3 {
     float: left;
     width: 100px;
     padding-left: 20px;
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2170,7 +2170,7 @@ input[type="checkbox"] ~ h3 {
 }
 
 .catalog-options-variant {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2312,7 +2312,7 @@ input[type="checkbox"] ~ h3 {
     vertical-align: top;
     width: 100px;
     height: 25px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 17px;
@@ -2462,7 +2462,7 @@ input[type="checkbox"] ~ h3 {
     margin-right: 10px;
     border-radius: 5px;
     border: 1px solid #e5e5e5;
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2503,7 +2503,7 @@ input[type="checkbox"] ~ h3 {
 
 .catalog-description-title {
     margin-bottom: 25px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -2512,7 +2512,7 @@ input[type="checkbox"] ~ h3 {
 }
 
 .catalog-description-about {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -2683,7 +2683,7 @@ textarea:focus,
 }
 
 .feedback-btn {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -2693,7 +2693,7 @@ textarea:focus,
 }
 
 .feedback-data {
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -2706,7 +2706,7 @@ textarea:focus,
 
 .feedback input,
 .feedback textarea {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2715,7 +2715,7 @@ textarea:focus,
 
 .feedback input::-webkit-input-placeholder,
 .feedback textarea::-webkit-input-placeholder {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2724,7 +2724,7 @@ textarea:focus,
 
 .feedback input::-moz-placeholder,
 .feedback textarea::-moz-placeholder {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2733,7 +2733,7 @@ textarea:focus,
 
 .feedback input:-moz-placeholder,
 .feedback textarea:-moz-placeholder {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2742,7 +2742,7 @@ textarea:focus,
 
 .feedback input:-ms-input-placeholder,
 .feedback textarea:-ms-input-placeholder {
-    font-family: "PT Sans", sans-serif, Arial;
+    font-family:"PT Sans" , "Arial" , sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2896,7 +2896,7 @@ textarea:focus,
     position: relative;
     margin-left: 180px;
     margin-bottom: 68px;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -2932,7 +2932,7 @@ textarea:focus,
     border-style: none;
     border-radius: 5px;
     outline: none;
-    font-family: "Cuprum", sans-serif, Arial;
+    font-family: "Cuprum" , "Arial" , sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
